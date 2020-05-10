@@ -27,6 +27,17 @@ app.get('/weatherReport',(req,res)=>{
     })
 });
 
+app.get('/counties/name',(req,res)=>{
+
+    countiesName((error,data)=>{
+        if(error){
+            return res.send({Error:error});
+        }
+        return res.send(data);
+    })
+
+})
+
 
 
 
