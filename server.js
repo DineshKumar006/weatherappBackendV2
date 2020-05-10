@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.get('/',(req,res)=>{
     
-   res.send('Home Page')
+   res.send('<h1>Home Page<h1>')
 });
 
 app.get('/weatherReport',(req,res)=>{
